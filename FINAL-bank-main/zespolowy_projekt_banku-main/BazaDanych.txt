@@ -1,0 +1,2 @@
+adam123,adam123,adamek,250.00
+tedek123,tadek123,tedeusz,160.45
