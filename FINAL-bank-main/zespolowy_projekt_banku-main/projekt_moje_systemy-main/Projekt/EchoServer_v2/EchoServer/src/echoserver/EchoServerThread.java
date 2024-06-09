@@ -29,31 +29,31 @@ public class EchoServerThread implements Runnable {
             while ((linia = brinp.readLine()) != null) {
                 System.out.println(nazwaWatku + "| Line read: " + linia);
 
-                if (linia == "zaloguj")
+                if (linia.equals("zaloguj"))
                 {
                     Logowanie(brinp, out, nazwaWatku);
                 }
-                else if (linia == "rejestracja")
+                else if (linia.equals("rejestracja"))
                 {
                     Rejestrowanie(brinp, out, nazwaWatku);
                 }
-                else if (linia == "wylistuj")
+                else if (linia.equals("zwylistuj"))
                 {
                     Wylistuj(out);
                 }
-                else if (linia == "depozyt")
+                else if (linia.equals("depozyt"))
                 {
                     Depozyt(brinp, out);
                 }
-                else if (linia == "wyplata")
+                else if (linia.equals("wyplata"))
                 {
                     Wyplata(brinp, out);
                 }
-                else if (linia == "transfer")
+                else if (linia.equals("transfer"))
                 {
                     Transfer(brinp, out);
                 }
-                else if (linia == "balans")
+                else if (linia.equals("balans"))
                 {
                     Balans(out);
                 }
