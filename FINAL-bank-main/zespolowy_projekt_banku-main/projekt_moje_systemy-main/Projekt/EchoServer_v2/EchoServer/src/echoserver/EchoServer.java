@@ -30,7 +30,7 @@ public class EchoServer {
         CopyOnWriteArrayList<ArrayList<String>> logins = new CopyOnWriteArrayList<>();
         WczytajDaneUzytkownika(logins);
 
-        try (ServerSocket serverSocket = new ServerSocket(6699)) {
+        try (ServerSocket serverSocket = new ServerSocket(6698)) {
             System.out.println("Socket zinicjalizowany...");
             System.out.println("Parametry Socket'u: " + serverSocket);
 
